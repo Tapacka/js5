@@ -1,5 +1,5 @@
-dead = document.getElementById('dead');
-lost = document.getElementById('lost');
+let dead = document.getElementById('dead');
+let lost = document.getElementById('lost');
 getHole = index => document.getElementById(`hole${index}`);
 final = (text) => {
     alert(text);
