@@ -1,11 +1,11 @@
-const p = document.getElementById('timer');
-var date = new Date();
-date.setUTCHours(0, 1, p.textContent);
-p.textContent = date.toISOString().slice(11,19);
+const span = document.getElementById('timer');
+let date = new Date();
+date.setUTCHours(0, 1, span.textContent);
+span.textContent = date.toISOString().slice(11,19);
 function timer() {
     date.setSeconds(date.getSeconds() - 1);
-    p.textContent = date.toISOString().slice(11,19);
-    if (p.textContent == '00:00:00') {
+    span.textContent = date.toISOString().slice(11,19);
+    if (span.textContent == '00:00:00') {
         clearInterval(c);
         alert('Вы победили!');
     }
